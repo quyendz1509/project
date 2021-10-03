@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style type="text/css">
+    html {
+      background-color: #009688;
+    }
+    .app {
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      border-radius: 6px;
+    }
+  </style>
+  <body>
+    <div class="app">
+      <div class="container">
+        <div class="card shadow">
+          <div class="card-header">
+            <a href="index.html" class="btn btn-outline-primary btn-sm"
+              >Bài 1</a
+            >
+            <a href="bai2.html" class="btn btn-primary btn-sm">Bài 2</a>
+            <a href="bai3.html" class="btn btn-outline-primary btn-sm">Bài 4</a>
+            <a href="bai4.html" class="btn btn-outline-primary btn-sm">Bài 5</a>
+            <a href="bai5.html" class="btn btn-outline-primary btn-sm">Bài 6</a>
+          </div>
+          <div class="card-body">
+            <div>
+              <div>
+                <h5>Bài 2: tạo dấu ... và . cuối câu</h5>
+              </div>
+              <label for="noidung">Nhập nội dung</label>
+              <input
+                type="text"
+                class="form-control mb-2"
+                id="noidung"
+                placeholder="Nhập nội dung"
+              />
+            </div>
+            <!--  -->
+            <div>
+              <label for="noidung">Nhập số đếm</label>
+              <input
+                type="number"
+                class="form-control mb-2"
+                id="number"
+                placeholder="Nhập nội dung"
+              />
+            </div>
+            <!--  -->
+            <button class="btn btn-sm btn-success mb-2" id="btn-convert">
+              Convert
+            </button>
+            <p id="result"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var btn = document.querySelector("#btn-convert");
+  var noidung = document.querySelector("#noidung");
+  var number = document.querySelector("#number");
+  var result = document.querySelector("#result");
+
+  btn.onclick = () => {
+    let dem = number.value > noidung.value.length ? "." : "...";
+    var test = noidung.value.slice(0, number.value);
+    result.innerHTML = `Nội dung sau khi được cắt: <strong class="text-success">${test}${dem}</strong>`;
+  };
+</script>

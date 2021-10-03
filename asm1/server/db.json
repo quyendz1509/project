@@ -1,0 +1,292 @@
+{
+  "categogries": [
+    {
+      "id": 1,
+      "name": "Laptop",
+      "icon": "assets/img/electronics/a.png"
+    },
+    {
+      "id": 2,
+      "name": "PC",
+      "icon": "assets/img/electronics/d.png"
+
+    },
+    {
+      "id": 3,
+      "name": "Linh kiện laptop",
+      "icon": "assets/img/electronics/c.png"
+
+    },
+    {
+      "id": 4,
+      "name": "Bàn phím",
+      "icon": "assets/img/electronics/keyboard.png"
+
+    },
+    {
+      "id": 5,
+      "name": "Chuột / Lót chuột",
+      "icon": "assets/img/electronics/i.png"
+
+    },
+    {
+      "id": 6,
+      "name": "Tai nghe",
+      "icon": "assets/img/electronics/b.png"
+
+    },
+    {
+      "id": 7,
+      "name": "Ghế Gaming",
+      "icon": "assets/img/electronics/chair.png"
+
+    },
+    {
+      "id": 8,
+      "name": "Apple",
+      "icon": "assets/img/electronics/iphone.png"
+
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "images": "https://product.hstatic.net/1000026716/product/r3sm_8d2a670269eb4c6a840919c231f26f87.png",
+      "name": "Laptop gaming Acer Nitro 5 AN515 45 R3SM",
+      "price": "21490000",
+      "detail": "",
+      "cat_id": "1"
+    },
+    {
+      "id": 2,
+      "images": "https://product.hstatic.net/1000026716/product/katana_gf66_11uc_676vn_805e6cee148a47f98ca27bc52bbf1886_3b60ab81ea5049f3999e2e0b3c46c42d_large.jpg",
+      "name": "Laptop Gaming MSI Katana GF66 11UC 676VN",
+      "price": "23990000",
+      "detail": "",
+      "cat_id": "1"
+    },
+    {
+      "id": 3,
+      "images": "https://product.hstatic.net/1000026716/product/tuf_dash_f15_fx516pc_hn002t_66447d72b92c47d1bda542de985c48e8_large.png",
+      "name": "Laptop Gaming Asus TUF Dash F15 FX516PC HN002T",
+      "price": "21490000",
+      "detail": "",
+      "cat_id": "1"
+    },
+    {
+      "id": 4,
+      "images": "https://product.hstatic.net/1000026716/product/lina_4d90299557b54820bc544ff9d32d7ccb_large.jpg",
+      "name": "Lina S",
+      "price": "21490000",
+      "detail": "",
+      "cat_id": "2"
+    },
+    {
+      "id": 5,
+      "images": "https://product.hstatic.net/1000026716/product/garen_0e41a175bd804a7ba94624b4c599e4c9.jpg",
+      "name": "Garen S",
+      "price": "41490000",
+      "detail": "",
+      "cat_id": "2"
+    },
+    {
+      "id": 6,
+      "images": "https://product.hstatic.net/1000026716/product/ivy_1ddfd124c5d1412ea3d7cf944ac240bd.jpg",
+      "name": " Ivy 10 M",
+      "price": "8149000",
+      "detail": "",
+      "cat_id": "2"
+    },
+    {
+      "id": 7,
+      "images": "https://product.hstatic.net/1000026716/product/10105f_5b126b4acf4948cc9569ec7f73d8b273.jpg",
+      "name": "Intel Core i3 10105F / 6MB / 4.4GHZ / 4 nhân 8 luồng / LGA 1200",
+      "price": "2149000",
+      "detail": "",
+      "cat_id": "3"
+    },
+    {
+      "id": 8,
+      "images": "https://product.hstatic.net/1000026716/product/gearvn-vga-gigabyte-geforce-rtx-3070-vision-oc-8g-666_441dfec49ca247ba957196bfb51dcc57.png",
+      "name": "GIGABYTE GeForce RTX 3070 VISION OC 8G (rev 2.0)",
+      "price": "26149000",
+      "detail": "",
+      "cat_id": "3"
+    },
+    {
+      "id": 9,
+      "images": "https://product.hstatic.net/1000026716/product/intel-core-i9-10850ka-01_7dc7c097a62c40a0be1b728c85aec1b1.jpg",
+      "name": "Intel Core i9 10850KA / 20MB / 3.6GHz / 10 Nhân 20 Luồng",
+      "price": "12149000",
+      "detail": "",
+      "cat_id": "3"
+    },
+    {
+      "id": 10,
+      "images": "https://product.hstatic.net/1000026716/product/1_b7c367e6773f435e91204cd4408eda55.png",
+      "name": "GIGABYTE Z590 AORUS ELITE (rev. 1.0)",
+      "price": "6449000",
+      "detail": "",
+      "cat_id": "3"
+    },
+    {
+      "id": 11,
+      "images": "https://product.hstatic.net/1000026716/product/gp-ar36c18s8k2hu416rd_8fb4a98401c641b99d3dff1cb98ac61c.jpg",
+      "name": "(16GB DDR4 2x8G 3200) AORUS RGB Memory RAM CL16-18-18-38",
+      "price": "3149000",
+      "detail": "",
+      "cat_id": "3"
+    },
+    {
+      "id": 12,
+      "images": "https://product.hstatic.net/1000026716/product/870_evo_1_5187e782a5de4d9ab77f6090b9c0d4aa.jpg",
+      "name": "SSD Samsung 870 EVO 4TB 2.5' SATA III",
+      "price": "14149000",
+      "detail": "",
+      "cat_id": "3"
+    },
+    {
+      "id": 13,
+      "images": "https://product.hstatic.net/1000026716/product/thumbphim_70ead74c39aa424d9d2eef014f2a05f5.png",
+      "name": "Bàn phím Logitech G PRO KDA",
+      "price": "2499000",
+      "detail": "",
+      "cat_id": "4"
+    },
+    {
+      "id": 14,
+      "images": "https://product.hstatic.net/1000026716/product/gearvn-ban-phim-co-razer-huntsman-mini-mercury-766_760a5c27882e43a0a4a7382d724077c8_large.jpg",
+      "name": "Bàn phím cơ Razer Huntsman Mini Mercury",
+      "price": "3499000",
+      "detail": "",
+      "cat_id": "4"
+    },
+    {
+      "id": 15,
+      "images": "https://product.hstatic.net/1000026716/product/k3_rgb1_a80edd91f0c942cda7b54ba1f0ab9353.jpg",
+      "name": "Bàn phím cơ Keychron K3 RGB Hot Swap",
+      "price": "2499000",
+      "detail": "",
+      "cat_id": "4"
+    },
+    {
+      "id": 16,
+      "images": "https://product.hstatic.net/1000026716/product/gearvn-chuot-asus-rog-chakram-1_8d0d8728702646efb71a08928604fc62.jpg",
+      "name": "Chuột Asus ROG Chakram",
+      "price": "3149000",
+      "detail": "",
+      "cat_id": "5"
+    },
+    {
+      "id": 17,
+      "images": "https://product.hstatic.net/1000026716/product/a_2edc6428904e4271a6769159f9fd4c97_c969f9e944d748f38e96d4163265cee3.jpg",
+      "name": "Chuột Fuhlen G90 Black",
+      "price": "340000",
+      "detail": "",
+      "cat_id": "5"
+    },
+    {
+      "id": 18,
+      "images": "https://product.hstatic.net/1000026716/product/gearvn_g903_w_7a90e8a2113a45b09b80d390ae6a903f_grande_a232da09a20546cb9bbe4b2fca32c001.jpg",
+      "name": "Chuột Logitech G903 Hero Lightspeed Wireless",
+      "price": "2499000",
+      "detail": "",
+      "cat_id": "5"
+    },
+    {
+      "id": 19,
+      "images": "https://product.hstatic.net/1000026716/product/g733_6f97109db5774b769bf60c5d225d8254.png",
+      "name": "Tai nghe Logitech G733 KDA Lightspeed Wireless",
+      "price": "3890000",
+      "detail": "",
+      "cat_id": "6"
+    },
+    {
+      "id": 20,
+      "images": "https://product.hstatic.net/1000026716/product/gearvn-tai-nghe-razer-blackshark-v2-666_a9373677a8214572824d9969ec5ea10f.jpg",
+      "name": "Tai nghe Razer BlackShark V2",
+      "price": "1987000",
+      "detail": "",
+      "cat_id": "6"
+    },
+    {
+      "id": 21,
+      "images": "https://product.hstatic.net/1000026716/product/gearvn.com-products-tai-nghe-dareu-a700-wireless-3_88750ef021a94882ac4ab1f298a52a64.jpg",
+      "name": "Tai nghe DareU A700 Wireless",
+      "price": "999000",
+      "detail": "",
+      "cat_id": "6"
+    },
+    {
+      "id": 22,
+      "images": "https://product.hstatic.net/1000026716/product/azaudio-akracing-masters-series-premium-black-carbon-fb_d96070772fcd41f58072adba84be3647.jpeg",
+      "name": "Ghế AKRacing Masters Series Premium Black",
+      "price": "8970000",
+      "detail": "",
+      "cat_id": "7"
+    },
+    {
+      "id": 23,
+      "images": "https://product.hstatic.net/1000026716/product/gearvn-ghe-choi-game-asus-rog-chariot-9999_d3216d71ccd9469da8860a24d5064654.jpg",
+      "name": "Ghế chơi game ASUS ROG Chariot RGB",
+      "price": "14789000",
+      "detail": "",
+      "cat_id": "7"
+    },
+    {
+      "id": 24,
+      "images": "https://product.hstatic.net/1000026716/product/10291_a7f81fd9ad86400ab911290ef6e63c11.jpeg",
+      "name": "Ghế chơi game Warrior WGC102 Black",
+      "price": "2249000",
+      "detail": "",
+      "cat_id": "7"
+    },
+    {
+      "id": 25,
+      "images": "https://product.hstatic.net/1000026716/product/macbook_13_g8512_4af9ab8d819e4aa09f9bc1a9908d84c1.jpg",
+      "name": "Macbook Pro 13 2020 M1 8GB 512GB MYD92SA/A - Grey",
+      "price": "35690000",
+      "detail": "",
+      "cat_id": "8"
+    },
+    {
+      "id": 26,
+      "images": "https://product.hstatic.net/1000026716/product/ag512_63f0641d22e84eb3a3aa299d0805d8d3.jpg",
+      "name": "Macbook Air 2020 M1 8GPU 8GB 512GB MGNE3SA/A - Gold",
+      "price": "29490000",
+      "detail": "",
+      "cat_id": "8"
+    },
+    {
+      "id": 27,
+      "images": "https://product.hstatic.net/1000026716/product/apple-magic-keyboard-numeric-keypad-silver-5-600x600_a9060b4a36644914b18af0a8b7077d7b.jpeg",
+      "name": "Apple Magic Keyboard with Numeric Keypad - Silver",
+      "price": "3874900",
+      "detail": "",
+      "cat_id": "8"
+    }
+  ],
+"orders": [
+  {
+    "id": 1,
+    "customer_name": "quyendz",
+    "customer_address": "Lâm Đồng...",
+    "customer_email": "quyendz@gmail.com",
+    "customer_phone": "0911888999",
+    "create_time": "2021-09-27 16:00:00",
+    "status": 0
+  },
+  {
+    "id": 2,
+    "customer_name": "quyendz",
+    "customer_address": "Lâm Đồng...",
+    "customer_email": "quyendz@gmail.com",
+    "customer_phone": "0911888999",
+    "create_time": "2021-09-27 16:00:00",
+    "status": 0
+  }
+],
+"order_detail" : [
+  {"id" : 1, "order_id": 1, "product_id": 27, "quantity": 2, "unti_price": 500000}
+]
+}

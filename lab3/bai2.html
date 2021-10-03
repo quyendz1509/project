@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h5>Bảng thông tin sinh viên</h5>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-6">
+              <label for="subjectname">Tên môn học</label>
+              <input
+                id="subjectname"
+                type="text"
+                class="form-control"
+                placeholder="Nhập tên môn học"
+              />
+            </div>
+            <div class="col-6">
+              <label for="point">Điểm</label>
+              <input
+                id="point"
+                type="number"
+                class="form-control"
+                placeholder="Nhập điểm"
+              />
+            </div>
+            <div class="mt-2">
+              <button id="add" class="btn btn-outline-success">Thêm</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          Thông tin sinh viên:
+          <div id="thongtin">
+            <p>Họ Tên: <strong id="name" class="text-success"></strong></p>
+            <p>Tuổi: <strong id="age" class="text-danger"></strong></p>
+            <p>Địa chỉ: <strong id="address" class="text-primary"></strong></p>
+            <p>Môn học:</p>
+            <ul id="subjects"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  const $ = (query) => {
+    return document.querySelector(query);
+  };
+
+  //   create element
+  const $$ = (tag) => {
+    return document.createElement(tag);
+  };
+  const sinhvien = {
+    name: "Nguyễn Văn A",
+    age: 21,
+    address: "Hồ Chí minh",
+    subject: [],
+  };
+
+  $("#name").innerHTML = sinhvien.name;
+  $("#age").innerHTML = sinhvien.age;
+  $("#address").innerHTML = sinhvien.address;
+  var button = $("#add");
+  button.onclick = () => {
+    var li = document.createElement("li");
+    var subjectname = $("#subjectname").value;
+    var inputPoiter = $("#point").value;
+    if (subjectname == "") {
+      $("#subjectname").focus();
+    } else if (inputPoiter == "") {
+      $("#point").focus();
+    } else {
+      var addSubject = { name: subjectname, point: inputPoiter };
+      sinhvien.subject.push(addSubject);
+      sinhvien.subject.forEach((element, index) => {
+        li.innerHTML = `Môn học: <strong class='text-info'>${subjectname}</strong> - Điểm: <strong class='text-danger'>${inputPoiter}</strong>`;
+      });
+
+      $("#subjects").appendChild(li);
+    }
+  };
+</script>

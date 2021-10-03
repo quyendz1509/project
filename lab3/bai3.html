@@ -1,0 +1,32 @@
+<script>
+  class Student {
+    constructor(name, age, address, birdthday, teacher, point, year) {
+      this.name = name;
+      this.age = age;
+      this.address = address;
+      this.birdthday = birdthday;
+      this.subject = [
+        {
+          Name: this.name,
+          Teacher: teacher,
+          Point: point,
+          Year: year,
+        },
+      ];
+    }
+  }
+  class StudentPoly extends Student {
+    constructor(id, name, email, avartar, address, study_marjor, avgScore) {
+      super(name);
+      this.id = id;
+      this.email = email;
+      this.avartar = avartar;
+      this.address = address;
+      this.study_marjor = study_marjor;
+      this.avgScore = avgScore;
+    }
+    getAvgScore() {}
+    setAvgScore(point) {}
+    changeAddresss(address) {}
+  }
+</script>

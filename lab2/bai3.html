@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style type="text/css">
+    .app {
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      border-radius: 6px;
+    }
+    html {
+      background-color: #c9889e;
+    }
+  </style>
+  <body>
+    <div class="app">
+      <div class="container">
+        <div class="card shadow">
+          <div class="card-header">
+            <a href="index.html" class="btn btn-outline-primary btn-sm"
+              >Bài 1</a
+            >
+            <a href="bai2.html" class="btn btn-outline-primary btn-sm">Bài 2</a>
+            <a href="bai3.html" class="btn btn-primary btn-sm">Bài 4</a>
+            <a href="bai4.html" class="btn btn-outline-primary btn-sm">Bài 5</a>
+            <a href="bai5.html" class="btn btn-outline-primary btn-sm">Bài 6</a>
+          </div>
+          <div class="card-body">
+            <div>
+              <h5>Bài 4: lọc ký tự đặc biệt</h5>
+            </div>
+            <label for="noidung">Nhập nội dung</label>
+            <input
+              type="text"
+              class="form-control mb-2"
+              id="noidung"
+              placeholder="Nhập nội dung"
+            />
+            <button class="btn btn-sm btn-success mb-2" id="btn-count">
+              Convert
+            </button>
+            <p id="result"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var btn = document.querySelector("#btn-count");
+  var result = document.querySelector("#result");
+  var path = /\W+./g;
+  btn.onclick = () => {
+    var noidung = document.querySelector("#noidung").value;
+    var test = noidung.match(path);
+    if (test == null) {
+      result.innerHTML = `<strong class='text-danger'>Chuỗi không có vấn đề.</strong>`;
+    } else {
+      let res = noidung.replace(path, (result) => {
+        return result.toUpperCase().slice(-1);
+      });
+      result.innerHTML = `<strong class='text-success'>Kết quả của bạn: ${res}</strong>`;
+    }
+  };
+</script>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style type="text/css">
+    .app {
+      top: 50%;
+      left: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      border-radius: 6px;
+    }
+    html {
+      background-color: #004387;
+    }
+  </style>
+  <body>
+    <div class="app">
+      <div class="container">
+        <div class="card shadow">
+          <div class="card-header">
+            <a href="index.html" class="btn btn-outline-primary btn-sm"
+              >Bài 1</a
+            >
+            <a href="bai2.html" class="btn btn-outline-primary btn-sm">Bài 2</a>
+            <a href="bai3.html" class="btn btn-outline-primary btn-sm">Bài 4</a>
+            <a href="bai4.html" class="btn btn-outline-primary btn-sm">Bài 5</a>
+            <a href="bai5.html" class="btn btn-primary btn-sm">Bài 6</a>
+          </div>
+          <div class="card-body">
+            <div>
+              <h5>Bài 6: Lọc tiêu đề.</h5>
+            </div>
+            <p id="result"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  var str = `<div id="tinnoibat">
+  <div id="top1">
+  <img width=150 height=120 align=left src="hinh/tnb1.jpg" />
+  <p><a href="le-nham-chuc.html"> Washington sẵn sàng cho lễ nhậm chức </a> </p>
+  Thủ đô nước Mỹ đã chuẩn bị xong mọi thứ để lễ nhậm chức của vị tổng thống da màu đầu tiên
+  trong lịch sử Barack Obama diễn ra ngày 20/1, trong đó trung tâm là tòa nhà Capitol.    
+  </div>    
+  <div id="top3">
+  <div> 
+  <img src="hinh/tnb2.jpg" width="140" height="90" /><br />
+  <a href="cau-day-vang.html"> Cầu dây văng made in VN đầu tiên  khánh thành </a> 
+  </div>
+  <div> 
+  <img src="hinh/tnb3.jpg" width="140" height="90" /><br />
+  <a href="cai-dau-vang-cua-cong-vinh.html"> Cái đầu vàng của Công Vinh   </a> 
+  </div>
+  <div> 
+  <img src="hinh/tnb4.jpg" width="140" height="90" /><br />
+  <a href="viet-nam-muon-nam/html"> Việt Nam muôn năm!   </a> 
+  </div>
+  </div>
+  </div>`;
+  var result = document.querySelector("#result");
+  var ul = document.createElement("ul");
+  //
+  var path_href = /(href|src)="(.*?)"/g;
+  //
+  var path_a = /">(.*?)<\/a>/g; // "> lấy nội dung </a>
+  //
+  ul.innerHTML +=
+    '<li  style="list-style: none;"><h5 class="text-danger"> Các đường link và hình ảnh: </h5></li>';
+
+  str.match(path_href).forEach((element) => {
+    ul.innerHTML += `<li class="badge bg-light text-dark shadow-sm" style='margin: 10px'>${element}.</li>`;
+  });
+  ul.innerHTML +=
+    '<li  style="list-style: none;"><h5 class="text-danger "> Các tiêu đề </h5></li>';
+
+  str.match(path_a).forEach((element) => {
+    var vip = element.slice(3);
+    ul.innerHTML += `<li  class="badge bg-light text-dark shadow-sm" style='margin: 10px'>${vip.replace(
+      " </a>",
+      ""
+    )}</li>`;
+  });
+  result.appendChild(ul);
+</script>

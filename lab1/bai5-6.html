@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+  <style>
+  ul{
+    display: flex;
+  } 
+  ul>li{
+    padding:  0px 10px;
+    list-style: none;
+    text-decoration: none;
+    box-shadow: 0px 0px 2px 1px #bfbfbf;
+    margin:  10px;
+    border-radius: 6px;
+  }
+</style>
+
+</head>
+<body>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="form">
+    <!--  -->
+    <div>
+      <label for="">Date</label>
+      <input type="number" class="form-control mb-2" placeholder="Nhập ngày" id="date" />
+    </div>
+    <!--  -->
+    <div>
+      <label for="">Month</label>
+      <input type="number" class="form-control mb-2" placeholder="Nhập tháng" id="month" />
+    </div>
+    <!--  -->
+    <div>
+      <label for="">Years</label>
+      <input type="number" class="form-control mb-2" placeholder="Nhập năm" id="years" />
+    </div>
+    <!--  -->
+    <div>
+      <button id="btnCover" class="btn btn-danger">Convert</button>
+    </div>
+  </div>
+  <div id="target"></div>
+</body>
+<script>
+  var btn = document.querySelector("#btnCover");
+  var target = document.querySelector("#target");
+  var ul = document.createElement("ul");
+  btn.addEventListener("click", () => {
+    var date = document.querySelector("#date").value;
+    var month = document.querySelector("#month").value;
+    var years = document.querySelector("#years").value;
+    const SortmonthNames = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+    ];
+    const monthNames = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+    ];
+      // Make Text H3
+      var d = new Date(years + "-" + month + "-" + date);
+       const dnew = moment(years + month + date);
+      ul.innerHTML = `<li><h3>${dnew.format("dddd")}</h3></li>`;
+      ul.innerHTML += `<li><h3>${d.getFullYear()}-${d.getMonth()}-${d.getDate()}</h3></li>`;
+      ul.innerHTML += `<li><h3>${d.getDate()}/${d.getMonth()}/${d.getFullYear()}</h3></li>`;
+      ul.innerHTML += `<li><h3>${d.getDate()}.${d.getMonth()}.${d.getFullYear()}</h3></li>`;
+      ul.innerHTML += `<li><h3>${d.getDate()},${
+        SortmonthNames[d.getMonth()]
+      } ${d.getFullYear()}</h3></li>`;
+      ul.innerHTML += `<li><h3>${d.getDate()},${
+        monthNames[d.getMonth()]
+      } ${d.getFullYear()}</h3></li>`;
+      // Bài 6
+  
+      '<li>'+ d.ggacxzxc + '</li>';
+
+      // Kết thúc bài 6
+      target.appendChild(ul);
+    });
+
+  </script>
+  </html>
